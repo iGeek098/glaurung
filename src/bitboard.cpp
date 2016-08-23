@@ -333,7 +333,7 @@ static const int BitTable[64] = {
 Square first_1(Bitboard b) {
   b ^= (b - 1);
   uint32_t fold = int(b) ^ int(b >> 32);
-  return Square(BitTable[(fold * 0x783a9b23) >> 26]);
+  return Square(BitTable[(fold * 0x783a9b23) >> 26]);// i'm sorry but i just wanted to ask how does this exactly work you got another nagic number 0x783A9B23 other than the one here https://chessprogramming.wikispaces.com/BitScan#MattTaylorsFoldingtrick so i think you know how this work or some resource for it and thanks
 }
 
 
